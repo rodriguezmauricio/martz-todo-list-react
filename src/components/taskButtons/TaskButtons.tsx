@@ -1,7 +1,15 @@
 import TaskIcon from "../taskIcon/TaskIcon";
 import "./taskButtons.css";
 
-const TaskButtons = ({ filterName, onClick, id, activeButton, setActiveButton }) => {
+interface ITaskButtons {
+	filterName: string;
+	onClick: () => void;
+	id: string;
+	activeButton: string;
+	setActiveButton: (id: string) => void;
+}
+
+const TaskButtons = ({ filterName, onClick, id, activeButton, setActiveButton }: ITaskButtons) => {
 	return (
 		<button
 			onClick={() => {
