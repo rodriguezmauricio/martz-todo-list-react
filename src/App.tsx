@@ -162,9 +162,9 @@ function App() {
 										handleChecked={handleChecked}
 										handleRemove={handleRemove}
 										handleEditButton={handleEditButton}
-										editTaskForm={editTaskForm}
-										setEditTaskForm={setEditTaskForm}
-										handleSubmitTaskForm={handleSubmitTaskForm}
+										// editTaskForm={editTaskForm}
+										// setEditTaskForm={setEditTaskForm}
+										// handleSubmitTaskForm={handleSubmitTaskForm}
 									/>
 								);
 							}

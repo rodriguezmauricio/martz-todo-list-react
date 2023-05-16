@@ -7,15 +7,16 @@ interface IListItem {
 	item: {
 		id: string;
 		task: string;
+		completed: boolean;
 	};
 	classname: string;
 	handleEditButton: (id: string, task: string) => void;
 	handleChecked: (id: string) => void;
 	handleRemove: (id: string) => void;
-	editTaskForm: { id: string; task: string };
-	setEditTaskForm: () => void;
-	handleSubmitTaskForm: (e: React.FormEvent, id: string, alteredTask: string) => void;
-	handleEditTaskForm: () => void;
+	// editTaskForm: { id: string; task: string };
+	// setEditTaskForm: Dispatch<SetStateAction<{ id: string; task: string }>>;
+	// handleSubmitTaskForm: (e: React.FormEvent, id: string, alteredTask: string) => void;
+	// handleEditTaskForm: () => void;
 }
 
 const ListItem: React.FC<IListItem> = ({
@@ -24,22 +25,22 @@ const ListItem: React.FC<IListItem> = ({
 	handleEditButton,
 	handleChecked,
 	handleRemove,
-	editTaskForm,
-	setEditTaskForm,
-	handleSubmitTaskForm,
-	handleEditTaskForm,
-}: IListItem) => {
+}: // editTaskForm,
+// setEditTaskForm,
+// handleSubmitTaskForm,
+// handleEditTaskForm,
+IListItem) => {
 	return (
 		<div className="list-container">
 			<div className={classname}>{`${item.task}`}</div>
 			<CheckButton
 				handleChecked={handleChecked}
 				item={item}
-				//pra editar o formulário
-				editTaskForm={editTaskForm}
-				setEditTaskForm={setEditTaskForm}
-				handleSubmitTaskForm={handleSubmitTaskForm}
-				handleEditTaskForm={handleEditTaskForm}
+				// //pra editar o formulário
+				// editTaskForm={editTaskForm}
+				// setEditTaskForm={setEditTaskForm}
+				// handleSubmitTaskForm={handleSubmitTaskForm}
+				// handleEditTaskForm={handleEditTaskForm}
 			/>
 			<EditButton itemId={item.id} handleEditButton={handleEditButton} item={item} />
 			<RemoveBtn itemId={item.id} handleRemove={handleRemove} />
