@@ -2,12 +2,11 @@ import { useEffect, useState } from "react";
 import { useMediaQuery } from "react-responsive";
 
 //import components
-import Modal from "react-modal";
 import Header from "./components/header/Header";
 import ListForm from "./components/listForm/ListForm";
 import ListItem from "./components/listItem/ListItem";
 import SideMenu from "./components/sideMenu/SideMenu";
-import EditTaskForm from "./components/editTaskForm/EditTaskForm.jsx";
+import EditTaskForm from "./components/editTaskForm/EditTaskForm";
 
 export interface Item {
 	id: string;
@@ -19,7 +18,6 @@ interface TaskList {
 	task: string;
 	completed: boolean;
 }
-Modal.setAppElement("#root");
 
 function App() {
 	// lista de tarefas
