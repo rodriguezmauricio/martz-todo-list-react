@@ -1,0 +1,19 @@
+.check-btn {
+	border: 1px solid rgb(4, 202, 103);
+	padding: 7rem;
+	border-radius: 50rem;
+	width: 30rem;
+	height: 30rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: rgb(4, 202, 103);
+	cursor: pointer;
+	transition: all 0.3s;
+}
+
+.check-btn:hover {
+	border: 1px solid rgb(4, 202, 103);
+	background-color: rgb(4, 202, 103);
+	color: #fff;
+}

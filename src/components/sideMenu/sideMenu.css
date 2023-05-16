@@ -1,0 +1,30 @@
+.side-container {
+	display: flex;
+	flex-direction: column;
+	background-color: #fff;
+	height: 100%;
+	color: #111;
+	align-items: center;
+}
+
+.tasks-side-menu {
+	display: flex;
+	width: 100%;
+}
+
+.tasks-icon {
+	padding: 0 30rem;
+}
+
+.tasks-list-items {
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+	gap: 10rem;
+	flex: 1;
+}
+
+.task-filter-list {
+	display: flex;
+	gap: 10rem;
+}

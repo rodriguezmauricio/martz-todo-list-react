@@ -1,0 +1,18 @@
+.task-buttons {
+	display: flex;
+	align-items: center;
+	gap: 10rem;
+	font-size: 16rem;
+	/* font-weight: 600; */
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+}
+
+.task-buttons:hover {
+	font-weight: bold;
+}
+
+.task-buttons:active {
+	font-weight: bold;
+}

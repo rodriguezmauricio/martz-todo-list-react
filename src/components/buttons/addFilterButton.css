@@ -1,0 +1,10 @@
+.add-filter-button {
+	background-color: transparent;
+	outline: 0;
+	border: none;
+	padding: 3rem;
+	display: flex;
+	gap: 10rem;
+	cursor: pointer;
+	color: #888888;
+}

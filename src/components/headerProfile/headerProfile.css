@@ -1,0 +1,12 @@
+.hp-container {
+	display: flex;
+	align-items: center;
+	padding: 30rem 30rem 0 30rem;
+	gap: 15rem;
+	width: fit-content;
+}
+
+.hp-image {
+	width: 70px;
+	border-radius: 70px;
+}

@@ -1,0 +1,19 @@
+.edit-btn {
+	border: 1px solid rgb(67, 181, 233);
+	padding: 7rem;
+	border-radius: 50rem;
+	width: 30rem;
+	height: 30rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: rgb(67, 181, 233);
+	cursor: pointer;
+	transition: all 0.3s;
+}
+
+.edit-btn:hover {
+	border: 1px solid rgb(67, 181, 233);
+	background-color: rgb(67, 181, 233);
+	color: #fff;
+}

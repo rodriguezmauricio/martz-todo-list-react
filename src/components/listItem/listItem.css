@@ -1,0 +1,23 @@
+.list-container {
+	display: flex;
+	background-color: #fff;
+	border-radius: 15rem;
+	color: #111;
+	align-items: center;
+	padding: 15rem;
+	margin-bottom: 10rem;
+	gap: 5rem;
+}
+
+.list-content {
+	flex: 1;
+	text-align: left;
+}
+
+.list-is-checked {
+	flex: 1;
+	text-align: left;
+	text-decoration: line-through;
+	color: #888888;
+	transition: all 0.3s;
+}
