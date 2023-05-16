@@ -10,7 +10,7 @@ interface SideMenu {
 	setFilter: (arg: string) => void;
 }
 
-const SideMenu = ({ filter, setFilter }: SideMenu) => {
+const SideMenu = ({ setFilter }: SideMenu) => {
 	const [activeButton, setActiveButton] = useState(1);
 
 	return (
@@ -29,7 +29,6 @@ const SideMenu = ({ filter, setFilter }: SideMenu) => {
 						setActiveButton={setActiveButton}
 						filterName={"All Tasks"}
 						onClick={() => setFilter("all")}
-						filter={filter}
 					/>
 					<TaskButtons
 						id={2}
@@ -37,7 +36,6 @@ const SideMenu = ({ filter, setFilter }: SideMenu) => {
 						setActiveButton={setActiveButton}
 						filterName={"Completed"}
 						onClick={() => setFilter("completed")}
-						filter={filter}
 					/>
 					<TaskButtons
 						id={3}
@@ -45,7 +43,6 @@ const SideMenu = ({ filter, setFilter }: SideMenu) => {
 						setActiveButton={setActiveButton}
 						filterName={"To Do"}
 						onClick={() => setFilter("incomplete")}
-						filter={filter}
 					/>
 				</div>
 			</div>
